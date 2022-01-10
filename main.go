@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"myapp/mylogger"
 	"os"
+	"time"
 )
 
 func main() {
@@ -21,6 +22,7 @@ func main() {
 		fmt.Print("-> ")
 		input, _ := reader.ReadString('\n')
 		ch <- input
+		time.Sleep(time.Second)
 	}
 
 }
