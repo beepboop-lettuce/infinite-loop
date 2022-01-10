@@ -14,4 +14,10 @@ func main() {
 
 	fmt.Println("Enter something")
 
+	for i := 0; i < 5; i++ {
+		fmt.Print("-> ")
+		input, _ := reader.ReadString('\n')
+		ch < input
+	}
+
 }
