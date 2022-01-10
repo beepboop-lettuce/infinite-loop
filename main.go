@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"myapp/mylogger"
 	"os"
-
-	"myapp/mylogger"
 )
 
 func main() {
