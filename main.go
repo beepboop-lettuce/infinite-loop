@@ -3,7 +3,10 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"myapp/mylogger"
 	"os"
+
+	"myapp/mylogger"
 )
 
 func main() {
@@ -11,6 +14,8 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	ch := make(chan string)
+
+	go mylogger.ListenForLog(ch)
 
 	fmt.Println("Enter something")
 
